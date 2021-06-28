@@ -1,0 +1,66 @@
+body::after {
+    background: linear-gradient(to right, blue, green);
+    /*
+    background-image: url("../imagens/Fitness.jpg");
+    background-repeat: no-repeat;    
+    */
+    content:"";
+    background: url("https://images.pexels.com/photos/841135/pexels-photo-841135.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.fundo-escuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #000000;
+}
+
+main{
+    z-index: 1;
+}
+ 
+nav {
+    background-color: #333;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav ul{
+    margin: 10px;
+    padding: 0;
+    
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    width: 100px;
+}
+
+nav > ul > li > a {
+     color:white;
+     background-color: rgb(17, 16, 24);
+     display: inline-block;
+     line-height: 2em;
+     padding: 5px 5px;
+     margin: 0px 5px;     
+}
+
+
+
+    
+

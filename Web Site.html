@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da academia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+   <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+        </ul>
+    </nav>
+   <main>
+    <div style="text-align:center">
+        <h1>Cadastro de Usuário</h1>
+        <p>Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+           
+        <div style="text-align:center">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required> 
+        </div><br>
+
+        <div style="text-align:center">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div><br>
+        
+
+        <div style="text-align:center">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div><br>
+
+        <div style="text-align: center">
+            <label for="sexo"><strong>Sexo</strong></label>
+            <input type="text" name="sexo" id="sexo"> 
+        </div><br>
+
+        <div style="text-align: center">
+            <label for="idade"><strong>Idade</strong></label>
+            <input type="number" min="0" max="100"> <br>
+        </div><br>
+
+        <div style="text-align: center">
+            <label for="peso"><strong>Peso (kg)</strong></label>
+            <input type="number" min="0" max="200">
+        </div><br>
+
+        <div style="text-align: center">
+            <label for="altura"><strong>Altura (cm)</strong></label>
+            <input type="number" min="0" max="200">
+        </div><br>
+
+        <div style="text-align: center">
+            <label for="datadenascimento"><strong>Data de Nascimento</strong></label>
+            <input type="date"> <br>
+        </div><br>
+
+        <div style="text-align: center">
+            <label for="cidade"><strong>Cidade</strong></label>
+            <input type="text" name="cidade" id="cidade">
+        </div><br>
+        
+
+        <div style="text-align: center">
+            <label><strong>Qual é seu plano?</strong></label><br>
+            <select id="qual é seu plano?">
+                <option selected disabled value="">Selecione</option>
+                <option>Gold</option>
+                <option>Platinum</option>
+            </select>
+        </div>
+        <br>
+
+        <div style="text-align: center">
+            <label><strong>Qual seu objetivo?</strong></label> <br><br>
+            <label>
+                <input type="radio" name="malhar" value="Ganharmassamuscular" checked><strong>Ganhar massa muscular</strong>
+            </label>
+            <label>
+                <input type="radio" name="malhar" value="definir"><strong>Definir músculos</strong>
+            </label>
+            <label>
+                <input type="radio" name="malhar" value="emagrecer"><strong>Emagrecer</strong>
+            </label>
+        </div><br>
+
+        <div style="text-align: center">
+           <label><strong>Você tem algum problema de saúde?</strong></label> <br><br>
+            <label>
+                <input type="radio" name="Sim" value="Sim" checked><strong>Sim</strong>
+            </label>
+            <label>
+                <input type="radio" name="Não" value="Não"><strong>Não</strong>
+            <label>
+                <input type="text">
+            </label>
+        </div><br>
+
+        <div style="text-align: center">
+            <label><strong>Você sente dor em algum lugar?</strong></label> <br><br>
+            <label>
+                <input type="radio" name="Sim" value="Sim"><strong>Sim</strong>
+            </label>
+            <label>
+                <input type="radio" name="Não" value="Não"><strong>Não</strong>
+            </label>
+            <label>
+                <input type="text">
+            </label>
+        </div><br>
+        
+        <div style="text-align: center"><button type="submit" onclick="cadastrar()">CADASTRAR</button>
+        </div><br>
+    </form>
+    </main>
+   <script src="main.js"></script>
+</body>    
+</html>
