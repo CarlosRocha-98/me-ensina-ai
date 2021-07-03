@@ -5,123 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
+    
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="novidades.html">Novidades</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-        </ul>
-    </nav>
-
-    <div style="text-align:center">
-        <h1>Cadastro de Usuário</h1>
-        <p>Complete suas informações</p>
-        <br>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Fitness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novidades.html">Novidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre mim.html">Sobre Nós</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </div>
 
-    <form>
+    <main>
+        <article>
+            <div class="titulo">
+            <h1>Cadastro de Usuário</h1></div>
+            <div class="nome">
+            <p>Complete suas informações</p></div>
+            <br>
+    
+        <form>
            
-        <div style="text-align:center">
-            <label for="nome"><strong>Nome</strong></label>
-            <input type="text" name="nome" id="nome" required> 
-        </div><br>
+            <div style="text-align:center">
+             <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required> 
+            </div><br>
 
-        <div style="text-align:center">
-            <label for="sobrenome"><strong>Sobrenome</strong></label>
-            <input type="text" name="sobrenome" id="sobrenome" required>
-        </div><br>
+            <div style="text-align:center">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+             </div><br>
         
 
-        <div style="text-align:center">
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" name="email" id="email" required>
-        </div><br>
+            <div style="text-align:center">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div><br>
 
-        <div style="text-align: center">
-            <label for="sexo"><strong>Sexo</strong></label>
-            <input type="text" name="sexo" id="sexo"> 
-        </div><br>
+            <div style="text-align: center">
+                <label for="sexo"><strong>Sexo</strong></label>
+                <input type="text" name="sexo" id="sexo"> 
+            </div><br>
 
-        <div style="text-align: center">
-            <label for="idade"><strong>Idade</strong></label>
-            <input type="number" min="0" max="100"> <br>
-        </div><br>
+            <div style="text-align: center">
+                <label for="idade"><strong>Idade</strong></label>
+                 <input type="number" min="0" max="100"> <br>
+            </div><br>
 
-        <div style="text-align: center">
-            <label for="peso"><strong>Peso (kg)</strong></label>
-            <input type="number" min="0" max="200">
-        </div><br>
+            <div style="text-align: center">
+                <label for="peso"><strong>Peso (kg)</strong></label>
+                <input type="number" min="0" max="200">
+            </div><br>
 
-        <div style="text-align: center">
-            <label for="altura"><strong>Altura (cm)</strong></label>
-            <input type="number" min="0" max="200">
-        </div><br>
+            <div style="text-align: center">
+                <label for="altura"><strong>Altura (cm)</strong></label>
+                <input type="number" min="0" max="200">
+            </div><br>
 
-        <div style="text-align: center">
-            <label for="datadenascimento"><strong>Data de Nascimento</strong></label>
-            <input type="date"> <br>
-        </div><br>
+            <div style="text-align: center">
+                <label for="datadenascimento"><strong>Data de Nascimento</strong></label>
+                <input type="date"> <br>
+            </div><br>
 
-        <div style="text-align: center">
-            <label for="cidade"><strong>Cidade</strong></label>
-            <input type="text" name="cidade" id="cidade">
-        </div><br>
+            <div style="text-align: center">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input type="text" name="cidade" id="cidade">
+            </div><br>
         
 
-        <div style="text-align: center">
-            <label><strong>Qual é seu plano?</strong></label><br>
-            <select id="qual é seu plano?">
-                <option selected disabled value="">Selecione</option>
-                <option>Gold</option>
-                <option>Platinum</option>
-            </select>
-        </div>
-        <br>
+            <div style="text-align: center">
+                <label><strong>Qual é seu plano?</strong></label><br>
+                <select id="qual é seu plano?">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
+                </select>
+            </div>
+            <br>
 
-        <div style="text-align: center">
-            <label><strong>Qual seu objetivo?</strong></label> <br><br>
-            <label>
+            <div style="text-align: center">
+                <label><strong>Qual seu objetivo?</strong></label> <br><br>
+                <label>
                 <input type="radio" name="malhar" value="Ganharmassamuscular" checked><strong>Ganhar massa muscular</strong>
-            </label>
-            <label>
-                <input type="radio" name="malhar" value="definir"><strong>Definir músculos</strong>
-            </label>
-            <label>
-                <input type="radio" name="malhar" value="emagrecer"><strong>Emagrecer</strong>
-            </label>
-        </div><br>
+                </label>
+                <label>
+                    <input type="radio" name="malhar" value="definir"><strong>Definir músculos</strong>
+                </label>
+                <label>
+                    <input type="radio" name="malhar" value="emagrecer"><strong>Emagrecer</strong>
+                </label>
+            </div><br>
 
-        <div style="text-align: center">
-           <label><strong>Você tem algum problema de saúde?</strong></label> <br><br>
-            <label>
-                <input type="radio" name="Sim" value="Sim" checked><strong>Sim</strong>
-            </label>
-            <label>
-                <input type="radio" name="Não" value="Não"><strong>Não</strong>
-            <label>
+            <div style="text-align: center">
+                <label><strong>Você tem algum problema de saúde?</strong></label> <br><br>
+                <label>
+                    <input type="radio" name="Sim" value="Sim" checked><strong>Sim</strong>
+                </label>
+                <label>
+                    <input type="radio" name="Não" value="Não"><strong>Não</strong>
+                <label>
                 <input type="text">
-            </label>
-        </div><br>
+                </label>
+            </div><br>
 
-        <div style="text-align: center">
-            <label><strong>Você sente dor em algum lugar?</strong></label> <br><br>
-            <label>
-                <input type="radio" name="Sim" value="Sim"><strong>Sim</strong>
-            </label>
-            <label>
-                <input type="radio" name="Não" value="Não"><strong>Não</strong>
-            </label>
-            <label>
-                <input type="text">
-            </label>
-        </div><br>
+            <div style="text-align: center">
+                <label><strong>Você sente dor em algum lugar?</strong></label> <br><br>
+                <label>
+                    <input type="radio" name="Sim" value="Sim"><strong>Sim</strong>
+                </label>
+                <label>
+                    <input type="radio" name="Não" value="Não"><strong>Não</strong>
+                </label>
+                <label>
+                 <input type="text">
+                </label>
+            </div><br>
         
-        <div style="text-align: center"><button type="submit" onclick="cadastrar()">CADASTRAR</button>
-        </div><br>
-    </form>
+            <div style="text-align: center"><button type="submit" onclick="cadastrar()">CADASTRAR</button>
+            </div><br>
+        </form>
+        </div>
+    </main>
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              
+              <div class="footer-pad">
+                
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#">INSTITUCIONAL</a></li>
+                  <li><a href="#">SEJA UM FRANQUEADO</a></li>
+                  <li><a href="#">UNIDADES</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                
+                <div class="footer-pad">
+                  
+                  <ul class="list-unstyled">
+                    <li><a href="#">PLANOS</a></li>
+                    <li><a href="#">FALE CONOSCO</a></li>
+                    <li><a href="#">POLÍTICA DE DADOS</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            <div class="col-md-3">
+                <h5>REDES SOCIAIS</h4>
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/profile.php?id=100009837168374" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/clarkklaus/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li><br><br>
+                </ul>				
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Fitness Academia 2021 - Todos os direitos reservados.</p>
+              </div>
+          </div>
+      
+      
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
